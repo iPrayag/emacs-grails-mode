@@ -1,4 +1,4 @@
-Forked project from http://emacs-grails-mode.googlecode.com/svn/trunk
+Forked project from http://emacs-grails-mode.googlecode.com/svn/trunk, (Project-mode)[http://code.google.com/p/emacs-project-mode/source/browse/#svn%2Ftrunk], (levenshtein)[http://www.emacswiki.org/emacs/levenshtein.el]
 
 Extends project-mode to add grails specific functionality such as fast switching between related files and unit testing. 
 
@@ -10,8 +10,11 @@ Download
 
 Installation:
 
-    * Put the source code in site-lisp or somewhere else in your LOAD-PATH.
-    * Add this to .emacs (may be in AppData/Roaming for Windows users).
+    * Put the source code in /usr/share/emacs24/site-lisp or somewhere else in your LOAD-PATH.
+    * Add this to .emacs or .emacs.d/init.el
+
+      (require 'project-mode)
+      (project-load-all) ; Loads all saved projects. Not required.
 
       (require 'grails-mode)
       (setq grails-mode t)
